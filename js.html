@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <h1 id="count">1</h1>
+    <button onclick="onCount()">Count</button>
+
+    <script>
+        const countElem = document.getElementById('count');
+
+        let count = 1;
+        function onCount() {
+            ++count;
+            console.log(count);
+            countElem.innerText = count;
+            countElem.style.fontSize = count + "px";
+
+        }
+    </script>
+</body>
+
+</html>
